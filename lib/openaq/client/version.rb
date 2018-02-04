@@ -1,5 +1,3 @@
 module Openaq
-  module Client
-    VERSION = "0.1.0".freeze
-  end
+  VERSION = "0.1.0".freeze
 end

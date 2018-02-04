@@ -1,7 +1,9 @@
+require 'net/http'
 require "openaq/client/version"
+require "openaq/client/cities"
 
 module Openaq
-  module Client
-    # Your code goes here...
+  class Client
+     include Openaq::Client::Cities
   end
 end
