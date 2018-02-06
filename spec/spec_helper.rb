@@ -1,11 +1,11 @@
 require "bundler/setup"
-require "openaq/client"
 require 'webmock/rspec'
 require "vcr"
 
+require File.expand_path('../../lib/openaq', __FILE__)
+
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
-  config.allow_http_connections_when_no_cassette = true
   config.hook_into :webmock
 end
 

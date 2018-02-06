@@ -1,4 +1,3 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "openaq/client/version"
@@ -11,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Ruby client for the OpenAQ API}
   spec.description   =  <<~DESCRIPTION
-      openaq-client is a Gem to wrap openaq.org JSON API
+      openaq-client is a Gem for the openaq.org JSON API
   DESCRIPTION
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"

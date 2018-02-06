@@ -1,6 +1,6 @@
 RSpec.describe Openaq::Client::Cities do
   before do
-    @client = Openaq::Client.new
+    @client = Openaq.client
   end
 
   describe ".cities" do
