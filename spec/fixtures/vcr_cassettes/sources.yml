@@ -1,0 +1,177 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openaq.org/v1/sources
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openaq.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, If-None-Match
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Date:
+      - Wed, 23 May 2018 19:51:07 GMT
+      Last-Modified:
+      - Wed, 23 May 2018 19:16:56 GMT
+      Vary:
+      - origin,accept-encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f9fdb36a35b271b2043714f4c4655495.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - f4kaOLqow2O8P7KwKDMLgAM9MX2DiZGuGhLTzPwQWbybG-2yTuDuvA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"name":"openaq-api","license":"CC BY 4.0","website":"https://docs.openaq.org/","page":1,"limit":100,"found":105},"results":[{"url":"http://www.arpalazio.net/main/aria/sci/annoincorso/chimici.php","adapter":"arpalazio","name":"ARPALAZIO","country":"IT","region":"Lazio","description":"Air
+        quality data from Lazio region, Italy","sourceURL":"http://www.arpalazio.net/","contacts":["info@openaq.org"],"active":true},{"url":"http://agaar.mn/aqdata/stationlist?period=h&count=1&language=en","adapter":"agaar_mn","name":"Agaar.mn","city":"Ulaanbaatar","country":"MN","description":"","resolution":"1
+        hr","sourceURL":"http://agaar.mn/index","contacts":["info@openaq.org"],"active":true},{"url":"ftp.airnowapi.org","adapter":"airnow","name":"AirNow","city":"","country":"","description":"","sourceURL":"http://www.airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://files.airnowtech.org/","adapter":"airnow-ke","name":"AirNow
+        Kenya","city":"","country":"KE","description":"AirNow adapter specifically
+        for Kenya since data is provided differently","sourceURL":"http://www.airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://www.dpccairdata.com/dpccairdata/display/avView15MinData.php","adapter":"india","name":"Anand
+        Vihar","city":"Delhi","country":"IN","description":"","resolution":"15 min","sourceURL":"http://www.dpccairdata.com/dpccairdata/display/index.php","contacts":["info@openaq.org"],"active":false},{"url":"http://www.juntadeandalucia.es/medioambiente/site/portalweb/menuitem.7e1cf46ddf59bb227a9ebe205510e1ca/?vgnextoid=7e612e07c3dc4010VgnVCM1000000624e50aRCRD&vgnextchannel=3b43de552afae310VgnVCM2000000624e50aRCRD","name":"Andalucia","adapter":"andalucia","country":"ES","description":"Data
+        for Andalucia from its Ministry of Environmental and Spatial Planning","sourceURL":"http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/","contacts":["info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340800","adapter":"anhui","name":"Anqing","city":"Anqing","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340800","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"https://dati.arpae.it/dataset/qualita-dell-aria-rete-di-monitoraggio/resource/a1c46cfe-46e5-44b4-9231-7d9260a38e68","adapter":"arpae","name":"Arpae
+        Emilia-Romagna","country":"IT","region":"Emilia-Romagna","timezone":"Etc/GMT-1","description":"Air
+        quality data from Emilia-Romagna region, Italy","sourceURL":"https://dati.arpae.it/","contacts":["info@openaq.org"],"active":true},{"url":"http://airquality.environment.nsw.gov.au/aquisnetnswphp/getPage.php?reportid=2","adapter":"nsw","name":"Australia
+        - New South Wales","city":"","country":"AU","description":"Measurements from
+        the Office of Environment & Heritage of the New South Wales government.","resolution":"1
+        hr","sourceURL":"http://www.environment.nsw.gov.au/AQMS/hourlydata.htm","contacts":["info@openaq.org","olaf@developmentseed.org"],"active":true},{"url":"http://www.ehp.qld.gov.au/cgi-bin/air/xml.php?category=1&region=ALL","adapter":"queensland","name":"Australia
+        - Queensland","city":"","country":"AU","description":"Measurements from Department
+        of Environment and Heritage Protection of Queensland Government.","resolution":"1
+        hr","sourceURL":"https://data.qld.gov.au/dataset/air-quality-monitoring-live-data-feed/resource/50410fbe-8766-45cd-a259-c4c1f3c89dd1","contacts":["info@openaq.org"],"active":true},{"url":"http://epa.tas.gov.au/Air/Live/EPA_tas_latest_particle_data.txt","adapter":"tasmania","name":"Australia
+        - Tasmania","city":"Tasmania Region","country":"AU","description":"Measurements
+        from Tasmanian EPA BLANkET air monitoring network, Australia.","resolution":"10
+        min","sourceURL":"http://epa.tas.gov.au/epa/air/monitoring-air-pollution/air-pollution-data","contacts":["info@openaq.org","bryce@esonica.com"],"active":true},{"url":"http://www.stateair.net/web/rss/1/1.xml","adapter":"beijing","name":"Beijing
+        US Embassy","city":"Beijing","country":"CN","description":"","resolution":"1
+        hr","sourceURL":"http://www.stateair.net/web/post/1/1.html","contacts":["info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340300","adapter":"anhui","name":"Bengbu","city":"Bengbu","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340300","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://www.fhmzbih.gov.ba/latinica/AKTUELNI/zrak2.php","adapter":"fhmzbih","name":"Bosnia","country":"BA","description":"","sourceURL":"http://www.fhmzbih.gov.ba/latinica/AKTUELNI/A-zrak.php","contacts":["info@openaq.org"],"active":true},{"url":"http://monitoringzrakatk.info/","adapter":"tuzlanski","name":"Bosnia_Tuzlanski","country":"BA","description":"","sourceURL":"http://monitoringzrakatk.info/","contacts":["info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341600","adapter":"anhui","name":"Bozhou","city":"Bozhou","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341600","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://www.buenosaires.gob.ar/areas/med_ambiente/apra/calidad_amb/red_monitoreo/index.php?","adapter":"buenos-aires","name":"Buenos
+        Aires","country":"AR","city":"Buenos Aires","description":"Air quality data
+        for Buenos Aires","sourceURL":"http://www.buenosaires.gob.ar/agenciaambiental","contacts":["info@openaq.org"],"active":false},{"url":"http://www.cpcb.gov.in/CAAQM/mapPage/frmindiamap.aspx","adapter":"cpcb","name":"CPCB","city":"","country":"IN","description":"","sourceURL":"http://www.cpcb.gov.in/CAAQM/mapPage/frmindiamap.aspx","contacts":["info@openaq.org"],"active":false},{"url":"http://www.stateair.net/web/rss/1/2.xml","adapter":"beijing","name":"Chengdu","city":"Chengdu","country":"CN","description":"","resolution":"1
+        hr","sourceURL":"http://www.stateair.net/web/post/1/2.html","contacts":["info@openaq.org"],"active":true},{"url":"http://sinca.mma.gob.cl/index.php/json","adapter":"chile","name":"Chile
+        - SINCA","city":"","country":"CL","description":"Measurements from SINCA,
+        a Chilean agency part of the Ministry of Environment.","resolution":"1 hr","sourceURL":"http://sinca.mma.gob.cl/index.php/json","contacts":["info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341700","adapter":"anhui","name":"Chizhou","city":"Chizhou","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341700","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341100","adapter":"anhui","name":"Chuzhou","city":"Chuzhou","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341100","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"https://uk-air.defra.gov.uk/latest/currentlevels","adapter":"defra","name":"DEFRA","country":"GB","description":"","sourceURL":"https://uk-air.defra.gov.uk/latest/currentlevels","contacts":["info@openaq.org"],"active":true},{"url":"unused","adapter":"unused","name":"Dr.
+        Raphael E. Arku and Colleagues","city":"Accra","country":"GH","description":"Manual
+        ingest of data from Dr. Raphael E. Arku and colleagues","sourceURL":"https://www.ncbi.nlm.nih.gov/pubmed?term=Arku+RE%5BAuthor%5D+AND+Accra+air+pollution%5BAll+Fields%5D&cmd=DetailsSearch","contacts":["info@openaq.org"],"active":false},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Andorra","location":"Andorra Location","city":"Andorra City","country":"AD","description":"Andoran
+        data from UTD service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Austria","city":"","country":"AT","description":"Austrian data from UTD service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":false},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Belgium","city":"","country":"BE","description":"Belgian data from UTD service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Croatia","city":"","country":"HR","description":"Croatian data from UTD service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Czech Republic","city":"","country":"CZ","description":"Czech data from UTD
+        service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Denmark","city":"","country":"DK","description":"Danish data from UTD service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Finland","city":"","country":"FI","description":"Finnish data from UTD service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        France","city":"","country":"FR","description":"French data from UTD service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Germany","city":"","country":"DE","description":"German data from UTD service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Gibraltar","city":"","country":"GI","description":"Gibraltar data from UTD
+        service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Hungary","city":"","country":"HU","description":"Hungarian data from UTD service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Ireland","city":"","country":"IE","description":"Irish data from UTD service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Latvia","city":"","country":"LV","description":"Latvian data from EEA Direct
+        service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Lithuania","city":"","country":"LT","description":"Lithuanian data from EEA
+        Direct service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Luxemburg","city":"","country":"LU","description":"Luxemburg data from EEA
+        Direct service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Macedonia","city":"","country":"MK","description":"Macedonian data from UTD
+        service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Malta","city":"","country":"MT","description":"Maltese data from EEA Direct
+        service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Portugal","city":"","country":"PT","description":"Portuguese data from EEA
+        Direct service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Servia","city":"","country":"RS","description":"Serbian data from EEA Direct
+        service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Slovakia","city":"","country":"SK","description":"Slovak data from EEA Direct
+        service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Spain","city":"","country":"ES","description":"Spanish data from UTD service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://discomap.eea.europa.eu/map/fme/latest/","adapter":"eea-direct","name":"EEA
+        Switzerland","city":"","country":"CH","description":"Swiss data from EEA Direct
+        service","sourceURL":"http://www.eea.europa.eu/themes/air/air-quality","contacts":["info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341200","adapter":"anhui","name":"Fuyang","city":"Fuyang","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341200","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://www.stateair.net/web/rss/1/3.xml","adapter":"beijing","name":"Guangzhou","city":"Guangzhou","country":"CN","description":"","resolution":"1
+        hr","sourceURL":"http://www.stateair.net/web/post/1/3.html","contacts":["info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340100","adapter":"anhui","name":"Hefei","city":"Hefei","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340100","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://www.aqhi.gov.hk/epd/ddata/html/out","adapter":"hong-kong","name":"Hong
+        Kong","city":"","country":"HK","description":"Hong Kong data from EPD","sourceURL":"https://data.gov.hk/en-data/dataset/hk-epd-airteam-past24hr-pc-of-individual-air-quality-monitoring-stations","contacts":["info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340600","adapter":"anhui","name":"Huaibei","city":"Huaibei","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340600","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340400","adapter":"anhui","name":"Huainan","city":"Huainan","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340400","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341000","adapter":"anhui","name":"Huangshan","city":"Huangshan","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341000","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://www.svivaaqm.net/","adapter":"envista","name":"Israel","country":"IL","description":"","resolution":"15
+        min","sourceURL":"http://www.svivaaqm.net/","timezone":"Asia/Jerusalem","organization":"Israel
+        Ministry of Environmental Protection","contacts":["info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341500","adapter":"anhui","name":"Lu''an","city":"Lu''an","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341500","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340500","adapter":"anhui","name":"Ma''anshan","city":"Ma''anshan","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340500","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://www.dpccairdata.com/dpccairdata/display/mmView15MinData.php","adapter":"india","name":"Mandir
+        Marg","city":"Delhi","country":"IN","description":"","resolution":"15 min","sourceURL":"http://www.dpccairdata.com/dpccairdata/display/index.php","contacts":["info@openaq.org"],"active":false},{"url":"http://mosecom.ru/air/air-today/","adapter":"moscow","name":"Mosecom","city":"Moscow","country":"RU","description":"","sourceURL":"http://mosecom.ru/air/air-today/","contacts":["info@openaq.org"],"active":false},{"url":"http://www.lml.rivm.nl/sos/","adapter":"netherlands","name":"Netherlands","city":"","country":"NL","description":"","resolution":"1
+        hr","sourceURL":"http://www.lml.rivm.nl/sos/","contacts":["info@openaq.org"],"active":true},{"url":"https://api.nilu.no/aq/utd.json","adapter":"norway","name":"Norway","city":"","country":"NO","description":"Norwegian
+        data from luftkvalitet.info","sourceURL":"http://www.luftkvalitet.info/home.aspx","contacts":["info@openaq.org","jonas.enge@gmail.com"],"active":true},{"url":"http://www.senamhi.gob.pe/","adapter":"peruclima","name":"Peru
+        Clima","city":"Lima","country":"PE","description":"","sourceURL":"http://peruclima.pe/?p=calidad-de-aire","contacts":["info@openaq.org"],"active":false},{"url":"http://sojp.wios.warszawa.pl/","adapter":"poland","name":"Poland","city":"unused","country":"PL","description":"","resolution":"1
+        hr","sourceURL":"http://sojp.wios.warszawa.pl/","contacts":["info@openaq.org"],"active":false},{"url":"http://www.dpccairdata.com/dpccairdata/display/pbView15MinData.php","adapter":"india","name":"Punjabi
+        Bagh","city":"Delhi","country":"IN","description":"","resolution":"15 min","sourceURL":"http://www.dpccairdata.com/dpccairdata/display/index.php","contacts":["info@openaq.org"],"active":false},{"url":"http://www.dpccairdata.com/dpccairdata/display/rkPuramView15MinData.php","adapter":"india","name":"RK
+        Puram","city":"Delhi","country":"IN","description":"","resolution":"15 min","sourceURL":"http://www.dpccairdata.com/dpccairdata/display/index.php","contacts":["info@openaq.org"],"active":false},{"url":"http://sistemasinter.cetesb.sp.gov.br/Ar/php/ar_dados_horarios_resultado.php","adapter":"saopaulo","name":"Sao
+        Paulo","city":"Sao Paulo","country":"BR","description":"","resolution":"1
+        hr","sourceURL":"http://sistemasinter.cetesb.sp.gov.br/Ar/php/ar_dados_horarios.php","contacts":["info@openaq.org"],"active":true},{"url":"http://www.senamhi.gob.pe/site/sea/www/site/sea/maps/map_data_ca_2.php","adapter":"senamhi","name":"Senamhi","city":"Lima","country":"PE","description":"","sourceURL":"http://www.senamhi.gob.pe/?p=calidad-de-aire","contacts":["info@openaq.org"],"active":true},{"url":"http://www.stateair.net/web/rss/1/4.xml","adapter":"beijing","name":"Shanghai","city":"Shanghai","country":"CN","description":"","resolution":"1
+        hr","sourceURL":"http://www.stateair.net/web/post/1/4.html","contacts":["info@openaq.org"],"active":true},{"url":"http://www.stateair.net/web/rss/1/5.xml","adapter":"beijing","name":"Shenyang","city":"Shenyang","country":"CN","description":"","resolution":"1
+        hr","sourceURL":"http://www.stateair.net/web/post/1/5.html","contacts":["info@openaq.org"],"active":true},{"url":"http://www.arso.gov.si/xml/zrak/ones_zrak_urni_podatki_zadnji.xml","adapter":"slovenia","name":"Slovenian
+        Environment Agency","city":"","country":"SI","description":"Official hourly
+        air pollution data by the Slovenian Environment Agency","sourceURL":"http://www.arso.gov.si","resolution":"1
+        hr","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/AbuDhabi/AbuDhabi-PM2.5.xml","adapter":"stateair","name":"StateAir_AbuDhabi","city":"Abu
+        Dhabi","country":"AE","description":"","sourceURL":"http://stateair.net/dos/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/AddisAbabaCentral/AddisAbabaCentral-PM2.5.xml","adapter":"stateair","name":"StateAir_Addis_Ababa_Central","city":"Addis
+        Ababa","country":"ET","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/AddisAbabaSchool/AddisAbabaSchool-PM2.5.xml","adapter":"stateair","name":"StateAir_Addis_Ababa_School","city":"Addis
+        Ababa","country":"ET","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/Bogota/Bogota-PM2.5.xml","adapter":"stateair","name":"StateAir_Bogota","city":"Bogota","country":"CO","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/Chennai/Chennai-PM2.5.xml","adapter":"stateair","name":"StateAir_Chennai","city":"Chennai","country":"IN","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/Colombo/Colombo-PM2.5.xml","adapter":"stateair","name":"StateAir_Colombo","city":"Colombo","country":"LK","description":"","sourceURL":"https://airnow.gov","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/Dhaka/Dhaka-PM2.5.xml","adapter":"stateair","name":"StateAir_Dhaka","city":"Dhaka","country":"BD","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/Hyderabad/Hyderabad-PM2.5.xml","adapter":"stateair","name":"StateAir_Hyderabad","city":"Hyderabad","country":"IN","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/JakartaCentral/JakartaCentral-PM2.5.xml","adapter":"stateair","name":"StateAir_JakartaCentral","city":"Jakarta","country":"ID","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/JakartaSouth/JakartaSouth-PM2.5.xml","adapter":"stateair","name":"StateAir_JakartaSouth","city":"Jakarta","country":"ID","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/Kampala/Kampala-PM2.5.xml","adapter":"stateair","name":"StateAir_Kampala","city":"Kampala","country":"UG","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/EmbassyKathmandu/EmbassyKathmandu-PM2.5.xml","adapter":"stateair","name":"StateAir_Kathmandu","city":"Kathmandu","country":"NP","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/Kolkata/Kolkata-PM2.5.xml","adapter":"stateair","name":"StateAir_Kolkata","city":"Kolkata","country":"IN","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/KuwaitCity/KuwaitCity-PM2.5.xml","adapter":"stateair","name":"StateAir_KuwaitCity","city":"Kuwait
+        City","country":"KW","description":"","sourceURL":"https://airnow.gov","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/Lima/Lima-PM2.5.xml","adapter":"stateair","name":"StateAir_Lima","city":"Lima","country":"PE","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/Manama/Manama-PM2.5.xml","adapter":"stateair","name":"StateAir_Manama","city":"Manama","country":"BH","description":"","sourceURL":"https://airnow.gov","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/Mumbai/Mumbai-PM2.5.xml","adapter":"stateair","name":"StateAir_Mumbai","city":"Mumbai","country":"IN","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/NewDelhi/NewDelhi-PM2.5.xml","adapter":"stateair","name":"StateAir_NewDelhi","city":"Delhi","country":"IN","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/PhoraDurbarKathmandu/PhoraDurbarKathmandu-PM2.5.xml","adapter":"stateair","name":"StateAir_PhoraDurbar","city":"Kathmandu","country":"NP","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://dosairnowdata.org/dos/RSS/Ulaanbaatar/Ulaanbaatar-PM2.5.xml","adapter":"stateair","name":"StateAir_Ulaanbaatar","city":"Ulaanbaatar","country":"MN","description":"","sourceURL":"https://airnow.gov/","contacts":["info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341300","adapter":"anhui","name":"Suzhou","city":"Suzhou","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341300","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://slb.nu/slbanalys/luften-idag/","adapter":"sweden","name":"Sweden","city":"Stockkholm","country":"SE","description":"Swedish
+        data from SLB analys","sourceURL":"http://slb.nu/slbanalys/luften-idag/","contacts":["info@openaq.org","hufnagel@kth.se"],"active":true},{"url":"http://opendata.epa.gov.tw/webapi/api/rest/datastore","adapter":"taiwan","name":"Taiwan","city":"","country":"TW","description":"Taiwanese
+        data from EPA","sourceURL":"http://taqm.epa.gov.tw/taqm/en/","contacts":["info@openaq.org"],"active":false},{"url":"http://www.aqmthai.com/index.php?lang=en","adapter":"thailand","name":"Thailand","city":"","country":"TH","description":"","resolution":"","sourceURL":"http://www.aqmthai.com/index.php","contacts":["info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340700","adapter":"anhui","name":"Tongling","city":"Tongling","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340700","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://tsag-agaar.gov.mn/observation/environment-monitoring/air-data","adapter":"tsag-agaar","name":"Tsag-Agaar.gov.mn","country":"MN","description":"","sourceURL":"http://tsag-agaar.gov.mn","timezone":"Asia/Ulaanbaatar","contacts":["info@openaq.org"],"active":true},{"url":"http://index.havaizleme.gov.tr/Dynamic/0","adapter":"turkey","name":"Turkey","city":"","country":"TR","description":"Turkish
+        data from National Air Quality Monitoring Network","sourceURL":"http://index.havaizleme.gov.tr/Dynamic/0","contacts":["info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340200","adapter":"anhui","name":"Wuhu","city":"Wuhu","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=340200","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341800","adapter":"anhui","name":"Xuancheng","city":"Xuancheng","country":"CN","description":"Data
+        from the Envoirnmental Protection Department of Anhui Province","resolution":"1
+        hr","sourceURL":"http://aepb.gov.cn/pages/Aepb15_SJZX_Air.aspx?CityCode=341800","contacts":["elilitwack+openaq@gmail.com","info@openaq.org"],"active":true},{"url":"https://app.cpcbccr.com/caaqms/caaqms_landing_map_all","adapter":"caaqm","name":"caaqm","city":"","country":"IN","description":"","sourceURL":"https://app.cpcbccr.com/ccr/#/caaqm-dashboard-all/caaqm-landing","contacts":["info@openaq.org"],"active":true},{"url":"https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69","adapter":"data_gov_in","name":"data.gov.in","city":"","country":"IN","description":"","sourceURL":"https://data.gov.in/resources/real-time-air-quality-index-various-locations","contacts":["info@openaq.org"],"active":false}]}'
+    http_version: 
+  recorded_at: Wed, 23 May 2018 19:51:07 GMT
+recorded_with: VCR 4.0.0

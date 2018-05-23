@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openaq.org/v1/countries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openaq.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, If-None-Match
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Date:
+      - Wed, 23 May 2018 19:51:04 GMT
+      Last-Modified:
+      - Wed, 23 May 2018 19:16:56 GMT
+      Vary:
+      - origin,accept-encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 482a78f386817c034ae15d18a92d3c98.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - aU_SewuCjBqrmboTNT5AxnjKJ7EFkjdRIo673IM19iZYP1q4DCAINQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"name":"openaq-api","license":"CC BY 4.0","website":"https://docs.openaq.org/","page":1,"limit":100,"found":65},"results":[{"name":"Andorra","code":"AD","cities":2,"locations":3,"count":24754},{"name":"Argentina","code":"AR","cities":1,"locations":4,"count":14976},{"name":"Australia","code":"AU","cities":18,"locations":101,"count":3747514},{"name":"Austria","code":"AT","cities":16,"locations":306,"count":1521351},{"name":"Bahrain","code":"BH","cities":1,"locations":1,"count":17746},{"name":"Bangladesh","code":"BD","cities":1,"locations":2,"count":18031},{"name":"Belgium","code":"BE","cities":14,"locations":196,"count":1393750},{"name":"Bosnia
+        and Herzegovina","code":"BA","cities":8,"locations":17,"count":762826},{"name":"Brazil","code":"BR","cities":72,"locations":119,"count":2812094},{"name":"Canada","code":"CA","cities":11,"locations":165,"count":2378957},{"name":"Chile","code":"CL","cities":139,"locations":114,"count":4655098},{"name":"China","code":"CN","cities":21,"locations":74,"count":1113368},{"name":"Colombia","code":"CO","cities":1,"locations":1,"count":16844},{"name":"Croatia","code":"HR","cities":17,"locations":50,"count":324417},{"name":"Czech
+        Republic","code":"CZ","cities":15,"locations":200,"count":1799676},{"name":"Denmark","code":"DK","cities":7,"locations":25,"count":225583},{"name":"Ethiopia","code":"ET","cities":1,"locations":2,"count":24486},{"name":"Finland","code":"FI","cities":35,"locations":107,"count":726938},{"name":"France","code":"FR","cities":135,"locations":1174,"count":8698391},{"name":"Germany","code":"DE","cities":36,"locations":1026,"count":8137570},{"name":"Ghana","code":"GH","cities":1,"locations":11,"count":1595},{"name":"Gibraltar","code":"GI","cities":2,"locations":6,"count":40842},{"name":"Hong
+        Kong","code":"HK","cities":9,"locations":16,"count":215679},{"name":"Hungary","code":"HU","cities":14,"locations":50,"count":634477},{"name":"India","code":"IN","cities":73,"locations":273,"count":7886306},{"name":"Indonesia","code":"ID","cities":2,"locations":3,"count":40635},{"name":"Ireland","code":"IE","cities":12,"locations":27,"count":111098},{"name":"Israel","code":"IL","cities":14,"locations":138,"count":90776451},{"name":"Italy","code":"IT","cities":45,"locations":104,"count":871675},{"name":"Kenya","code":"KE","cities":1,"locations":2,"count":530},{"name":"Kosovo","code":"XK","cities":1,"locations":1,"count":16314},{"name":"Kuwait","code":"KW","cities":1,"locations":1,"count":8765},{"name":"Latvia","code":"LV","cities":4,"locations":4,"count":53040},{"name":"Lithuania","code":"LT","cities":8,"locations":17,"count":153274},{"name":"Luxembourg","code":"LU","cities":3,"locations":7,"count":108959},{"name":"Macedonia,
+        the Former Yugoslav Republic of","code":"MK","cities":16,"locations":30,"count":427512},{"name":"Malta","code":"MT","cities":4,"locations":4,"count":67482},{"name":"Mexico","code":"MX","cities":5,"locations":95,"count":1944801},{"name":"Mongolia","code":"MN","cities":25,"locations":40,"count":2282031},{"name":"Nepal","code":"NP","cities":1,"locations":4,"count":32573},{"name":"Netherlands","code":"NL","cities":68,"locations":112,"count":5380626},{"name":"Nigeria","code":"NG","cities":1,"locations":1,"count":2541},{"name":"Norway","code":"NO","cities":32,"locations":72,"count":1360474},{"name":"Peru","code":"PE","cities":1,"locations":21,"count":513409},{"name":"Philippines","code":"PH","cities":1,"locations":1,"count":958},{"name":"Poland","code":"PL","cities":10,"locations":16,"count":547921},{"name":"Portugal","code":"PT","cities":16,"locations":66,"count":448035},{"name":"Russian
+        Federation","code":"RU","cities":1,"locations":49,"count":187117},{"name":"Serbia","code":"RS","cities":4,"locations":5,"count":25271},{"name":"Singapore","code":"SG","cities":1,"locations":1,"count":1275},{"name":"Slovakia","code":"SK","cities":8,"locations":38,"count":579222},{"name":"Slovenia","code":"SI","cities":8,"locations":8,"count":37211},{"name":"South
+        Africa","code":"ZA","cities":1,"locations":11,"count":263885},{"name":"Spain","code":"ES","cities":115,"locations":1067,"count":9048475},{"name":"Sri
+        Lanka","code":"LK","cities":1,"locations":1,"count":4256},{"name":"Sweden","code":"SE","cities":3,"locations":15,"count":245223},{"name":"Switzerland","code":"CH","cities":14,"locations":25,"count":410266},{"name":"Taiwan,
+        Province of China","code":"TW","cities":30,"locations":77,"count":2938513},{"name":"Thailand","code":"TH","cities":33,"locations":65,"count":2957491},{"name":"Turkey","code":"TR","cities":42,"locations":151,"count":4598087},{"name":"Uganda","code":"UG","cities":1,"locations":1,"count":8808},{"name":"United
+        Arab Emirates","code":"AE","cities":1,"locations":1,"count":4144},{"name":"United
+        Kingdom","code":"GB","cities":112,"locations":162,"count":5835787},{"name":"United
+        States","code":"US","cities":754,"locations":1978,"count":30690536},{"name":"Viet
+        Nam","code":"VN","cities":2,"locations":3,"count":37317}]}'
+    http_version: 
+  recorded_at: Wed, 23 May 2018 19:51:04 GMT
+recorded_with: VCR 4.0.0

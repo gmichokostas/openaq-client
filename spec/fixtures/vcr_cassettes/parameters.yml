@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openaq.org/v1/parameters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openaq.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, If-None-Match
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Date:
+      - Wed, 23 May 2018 19:51:07 GMT
+      Last-Modified:
+      - Wed, 23 May 2018 19:16:56 GMT
+      Vary:
+      - origin,accept-encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1405f8b432a21800efb933586c181f09.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - AFXG2qtMqI1ap-Ohoyx2-KLsBeK6qC8nO2BvPBwzCbcaoxzkAqcXXg==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXRhIjp7Im5hbWUiOiJvcGVuYXEtYXBpIiwibGljZW5zZSI6IkNDIEJZIDQuMCIsIndlYnNpdGUiOiJodHRwczovL2RvY3Mub3BlbmFxLm9yZy8ifSwicmVzdWx0cyI6W3siaWQiOiJiYyIsIm5hbWUiOiJCQyIsImRlc2NyaXB0aW9uIjoiQmxhY2sgQ2FyYm9uIiwicHJlZmVycmVkVW5pdCI6IsK1Zy9twrMifSx7ImlkIjoiY28iLCJuYW1lIjoiQ08iLCJkZXNjcmlwdGlvbiI6IkNhcmJvbiBNb25veGlkZSIsInByZWZlcnJlZFVuaXQiOiJwcG0ifSx7ImlkIjoibm8yIiwibmFtZSI6Ik5PMiIsImRlc2NyaXB0aW9uIjoiTml0cm9nZW4gRGlveGlkZSIsInByZWZlcnJlZFVuaXQiOiJwcG0ifSx7ImlkIjoibzMiLCJuYW1lIjoiTzMiLCJkZXNjcmlwdGlvbiI6Ik96b25lIiwicHJlZmVycmVkVW5pdCI6InBwbSJ9LHsiaWQiOiJwbTEwIiwibmFtZSI6IlBNMTAiLCJkZXNjcmlwdGlvbiI6IlBhcnRpY3VsYXRlIG1hdHRlciBsZXNzIHRoYW4gMTAgbWljcm9tZXRlcnMgaW4gZGlhbWV0ZXIiLCJwcmVmZXJyZWRVbml0IjoiwrVnL23CsyJ9LHsiaWQiOiJwbTI1IiwibmFtZSI6IlBNMi41IiwiZGVzY3JpcHRpb24iOiJQYXJ0aWN1bGF0ZSBtYXR0ZXIgbGVzcyB0aGFuIDIuNSBtaWNyb21ldGVycyBpbiBkaWFtZXRlciIsInByZWZlcnJlZFVuaXQiOiLCtWcvbcKzIn0seyJpZCI6InNvMiIsIm5hbWUiOiJTTzIiLCJkZXNjcmlwdGlvbiI6IlN1bGZ1ciBEaW94aWRlIiwicHJlZmVycmVkVW5pdCI6InBwbSJ9XX0=
+    http_version: 
+  recorded_at: Wed, 23 May 2018 19:51:07 GMT
+recorded_with: VCR 4.0.0

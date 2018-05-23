@@ -1,10 +1,27 @@
 require "openaq/networking"
-require "openaq/client/version"
-require "openaq/client/cities"
 
 module Openaq
   class Client
     include Networking
-    include Openaq::Client::Cities
+
+    [
+      :cities,
+      :countries,
+      :fetches,
+      :latest,
+      :locations,
+      :measurements,
+      :parameters,
+      :sources,
+    ].each do |name|
+      define_method(name) do |params={}|
+        get("/#{name}", params)
+      end
+
+      define_method(:"all_#{name}") do |params={}|
+        paginated_get("/#{name}", params)
+      end
+    end
+
   end
 end

@@ -1,7 +1,10 @@
+require "openaq/version"
 require "openaq/client"
 
 module Openaq
-  def self.client
-    Openaq::Client.new
+  class << self
+    def client
+      Openaq::Client.new
+    end
   end
 end
