@@ -1,14 +1,22 @@
-require 'json'
-require 'net/http'
-
 module Openaq
   module Networking
-    DEFAULT_ENDPOINT = "https://api.openaq.org/v1".freeze
 
     def get(path, params={})
-      uri = URI(DEFAULT_ENDPOINT + path)
+      uri = URI(Openaq.url + path)
       uri.query = URI.encode_www_form(params)
-      Net::HTTP.get_response(uri)
+
+      begin
+        response = Net::HTTP.get_response(uri)
+      rescue Timeout::Error, Errno::ECONNREFUSED => e
+        raise Openaq::Error, e.message
+      end
+
+      parsed_response = JSON.parse(response.body) rescue { "results" => [] }
+      if !response.is_a?(Net::HTTPSuccess)
+        raise Openaq::Error, parsed_response["error"] || "Openaq responded with #{response.code}."
+      end
+
+      parsed_body["results"]
     end
 
     def paginated_get(path, params={})
@@ -18,9 +26,8 @@ module Openaq
 
         loop do
           response = get(path, params)
-          json_response = JSON.parse(response.body)
-          if response.code == "200" && !json_response["results"].empty?
-            json_response["results"].map { |item| yielder << item }
+          if !response.empty?
+            response.map { |item| yielder << item }
             params[:page] += 1
           else
             raise StopIteration
