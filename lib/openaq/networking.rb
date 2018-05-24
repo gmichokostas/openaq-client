@@ -16,7 +16,7 @@ module Openaq
         raise Openaq::Error, parsed_response["error"] || "Openaq responded with #{response.code}."
       end
 
-      parsed_body["results"]
+      parsed_response["results"]
     end
 
     def paginated_get(path, params={})
