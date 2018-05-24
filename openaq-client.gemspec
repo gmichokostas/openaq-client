@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   =  <<~DESCRIPTION
       openaq-client is a Gem for the openaq.org JSON API
   DESCRIPTION
+  spec.homepage      = "https://github.com/gmichokostas/openaq-client"
   spec.license       = "MIT"
 
   spec.files         = Dir.glob('lib/**/*')

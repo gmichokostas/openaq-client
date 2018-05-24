@@ -2,6 +2,8 @@
 
 This project contains the Ruby wrapper for the [Open AQ API](https://docs.openaq.org).
 
+[![Build Status](https://travis-ci.org/gmichokostas/openaq-client.svg?branch=master)](https://travis-ci.org/gmichokostas/openaq-client)
+
 ## Installation
 
 Add this line to your application's Gemfile:
