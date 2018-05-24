@@ -1,4 +1,4 @@
-# Openaq::Client
+# Openaq Ruby Client
 
 This project contains the Ruby wrapper for the [Open AQ API](https://docs.openaq.org).
 
@@ -27,7 +27,8 @@ require 'openaq'
 
 client = Openaq.client
 
-cities = client.cities
+cities = client.cities # default params
+cities = client.cities(page: 1, limit: 5)
 ```
 
 ## Contributing
