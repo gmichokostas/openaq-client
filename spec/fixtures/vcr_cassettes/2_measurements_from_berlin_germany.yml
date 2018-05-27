@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openaq.org/v1/measurements?city=Berlin&country=DE&limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openaq.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, If-None-Match
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Date:
+      - Sun, 27 May 2018 17:03:38 GMT
+      Last-Modified:
+      - Sun, 27 May 2018 15:56:57 GMT
+      Vary:
+      - origin,accept-encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 28dd86caf1f9f4ffb0617db28e093a59.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - RrfQEmaGRh4u3b0STHpOIe3s1Kq6IlzQl30pg20lcReMyR5AW-Z7DQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXRhIjp7Im5hbWUiOiJvcGVuYXEtYXBpIiwibGljZW5zZSI6IkNDIEJZIDQuMCIsIndlYnNpdGUiOiJodHRwczovL2RvY3Mub3BlbmFxLm9yZy8iLCJwYWdlIjoxLCJsaW1pdCI6MiwiZm91bmQiOjM3NDE0fSwicmVzdWx0cyI6W3sibG9jYXRpb24iOiJERUJFMDYyIiwicGFyYW1ldGVyIjoibm8yIiwiZGF0ZSI6eyJ1dGMiOiIyMDE4LTA1LTI3VDA2OjAwOjAwLjAwMFoiLCJsb2NhbCI6IjIwMTgtMDUtMjdUMDg6MDA6MDArMDI6MDAifSwidmFsdWUiOjMuNDQsInVuaXQiOiLCtWcvbcKzIiwiY29vcmRpbmF0ZXMiOnsibGF0aXR1ZGUiOjUyLjY1MzI2OSwibG9uZ2l0dWRlIjoxMy4yOTYwODF9LCJjb3VudHJ5IjoiREUiLCJjaXR5IjoiQmVybGluIn0seyJsb2NhdGlvbiI6IkRFQkUwNjgiLCJwYXJhbWV0ZXIiOiJubzIiLCJkYXRlIjp7InV0YyI6IjIwMTgtMDUtMjdUMDY6MDA6MDAuMDAwWiIsImxvY2FsIjoiMjAxOC0wNS0yN1QwODowMDowMCswMjowMCJ9LCJ2YWx1ZSI6OC44NSwidW5pdCI6IsK1Zy9twrMiLCJjb29yZGluYXRlcyI6eyJsYXRpdHVkZSI6NTIuNTEzNjA2LCJsb25naXR1ZGUiOjEzLjQxODgzM30sImNvdW50cnkiOiJERSIsImNpdHkiOiJCZXJsaW4ifV19
+    http_version: 
+  recorded_at: Sun, 27 May 2018 17:03:38 GMT
+recorded_with: VCR 4.0.0

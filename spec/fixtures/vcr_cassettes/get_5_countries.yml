@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openaq.org/v1/countries?limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openaq.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, If-None-Match
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Date:
+      - Sun, 27 May 2018 16:42:28 GMT
+      Last-Modified:
+      - Sun, 27 May 2018 15:56:57 GMT
+      Vary:
+      - origin,accept-encoding
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 773455c70e671b68419317a9c32aa999.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - cMPmcUX_MBSZSZSjd6mEzX8TtGHe7mknY9tnZWDqIkK3PmzDkvec8w==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"name":"openaq-api","license":"CC BY 4.0","website":"https://docs.openaq.org/","page":1,"limit":5,"found":65},"results":[{"name":"Andorra","code":"AD","cities":2,"locations":3,"count":25233},{"name":"Argentina","code":"AR","cities":1,"locations":4,"count":14976},{"name":"Australia","code":"AU","cities":18,"locations":101,"count":3762615},{"name":"Austria","code":"AT","cities":16,"locations":306,"count":1521351},{"name":"Bahrain","code":"BH","cities":1,"locations":1,"count":17896}]}'
+    http_version: 
+  recorded_at: Sun, 27 May 2018 16:44:40 GMT
+recorded_with: VCR 4.0.0

@@ -8,6 +8,16 @@ RSpec.describe Openaq::Client do
         assert_requested(:get, 'https://api.openaq.org/v1/cities')
       end
     end
+
+    it 'returns two cities from Germany' do
+      VCR.use_cassette('german_cities') do
+        german_cities = client.cities(page: 1, limit: 2, country: 'DE')
+        assert_requested(:get, 'https://api.openaq.org/v1/cities?limit=2&country=DE&page=1')
+        expect(german_cities.count).to eql(2)
+        expect(german_cities.first['country']).to eql('DE')
+        expect(german_cities[1]['country']).to eql('DE')
+      end
+    end
   end
 
   describe '#countries' do
@@ -15,6 +25,15 @@ RSpec.describe Openaq::Client do
       VCR.use_cassette('countries') do
         client.countries
         assert_requested(:get, 'https://api.openaq.org/v1/countries')
+      end
+
+    end
+
+    it 'returns only 5 countries' do
+      VCR.use_cassette('get_5_countries') do
+        countries = client.countries(limit: 5)
+        assert_requested(:get, 'https://api.openaq.org/v1/countries?limit=5')
+        expect(countries.count).to eql(5)
       end
     end
   end
@@ -26,6 +45,14 @@ RSpec.describe Openaq::Client do
         assert_requested(:get, 'https://api.openaq.org/v1/fetches')
       end
     end
+
+    it 'returns only two results' do
+      VCR.use_cassette('2_fetches') do
+        fetches = client.fetches(limit: 2)
+        assert_requested(:get, 'https://api.openaq.org/v1/fetches?limit=2')
+        expect(fetches.count).to eql(2)
+      end
+    end
   end
 
   describe '#latest' do
@@ -33,6 +60,18 @@ RSpec.describe Openaq::Client do
       VCR.use_cassette('latest') do
         client.latest
         assert_requested(:get, 'https://api.openaq.org/v1/latest')
+      end
+    end
+
+    it 'returns 2 results from Berlin/Germany' do
+      VCR.use_cassette('2_latest_from_berlin_germany') do
+        latest = client.latest(limit: 2, country:'DE', city: 'Berlin')
+        assert_requested(:get, 'https://api.openaq.org/v1/latest?limit=2&country=DE&city=Berlin')
+        expect(latest.count).to eql(2)
+        expect(latest[0]['country']).to eql('DE')
+        expect(latest[0]['city']).to eql('Berlin')
+        expect(latest[1]['country']).to eql('DE')
+        expect(latest[1]['city']).to eql('Berlin')
       end
     end
   end
@@ -44,6 +83,18 @@ RSpec.describe Openaq::Client do
         assert_requested(:get, 'https://api.openaq.org/v1/locations')
       end
     end
+
+    it 'returns 2 results from Berlin/Germany' do
+      VCR.use_cassette('2_locations_from_berlin_germany') do
+        locations = client.locations(limit: 2, country: 'DE', city: 'Berlin')
+        assert_requested(:get, 'https://api.openaq.org/v1/locations?limit=2&country=DE&city=Berlin')
+        expect(locations.count).to eql(2)
+        expect(locations[0]['country']).to eql('DE')
+        expect(locations[0]['city']).to eql('Berlin')
+        expect(locations[1]['country']).to eql('DE')
+        expect(locations[1]['city']).to eql('Berlin')
+      end
+    end
   end
 
   describe '#measurements' do
@@ -51,6 +102,18 @@ RSpec.describe Openaq::Client do
       VCR.use_cassette('measurements') do
         client.measurements
         assert_requested(:get, 'https://api.openaq.org/v1/measurements')
+      end
+    end
+
+    it 'returns 2 results from Berlin/Germany' do
+      VCR.use_cassette('2_measurements_from_berlin_germany') do
+        measurements = client.measurements(limit: 2, country: 'DE', city: 'Berlin')
+        assert_requested(:get, 'https://api.openaq.org/v1/measurements?limit=2&country=DE&city=Berlin')
+        expect(measurements.count).to eql(2)
+        expect(measurements[0]['country']).to eql('DE')
+        expect(measurements[0]['city']).to eql('Berlin')
+        expect(measurements[1]['country']).to eql('DE')
+        expect(measurements[1]['city']).to eql('Berlin')
       end
     end
   end
@@ -65,12 +128,19 @@ RSpec.describe Openaq::Client do
   end
 
   describe '#sources' do
-      it 'provides a list of data sources' do
-        VCR.use_cassette('sources') do
-          client.sources
-          assert_requested(:get, 'https://api.openaq.org/v1/sources')
-        end
+    it 'provides a list of data sources' do
+      VCR.use_cassette('sources') do
+        client.sources
+        assert_requested(:get, 'https://api.openaq.org/v1/sources')
       end
     end
 
+    it 'returns only 2 results' do
+      VCR.use_cassette('2_sources') do
+        sources = client.sources(limit: 2)
+        assert_requested(:get, 'https://api.openaq.org/v1/sources?limit=2')
+        expect(sources.count).to eql(2)
+      end
+    end
+  end
 end

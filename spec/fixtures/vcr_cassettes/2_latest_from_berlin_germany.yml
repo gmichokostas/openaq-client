@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openaq.org/v1/latest?city=Berlin&country=DE&limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openaq.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, If-None-Match
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Date:
+      - Sun, 27 May 2018 16:56:34 GMT
+      Last-Modified:
+      - Sun, 27 May 2018 15:56:57 GMT
+      Vary:
+      - origin,accept-encoding
+      X-Cache:
+      - RefreshHit from cloudfront
+      Via:
+      - 1.1 993f1a5b6afe3aaa0c514229f2091ea0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - RzH7j1tyItvrpqxum0pV7TWWFT_1ZUZ2UC6XQa4dFLVepCaNypXaXw==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXRhIjp7Im5hbWUiOiJvcGVuYXEtYXBpIiwibGljZW5zZSI6IkNDIEJZIDQuMCIsIndlYnNpdGUiOiJodHRwczovL2RvY3Mub3BlbmFxLm9yZy8iLCJwYWdlIjoxLCJsaW1pdCI6MiwiZm91bmQiOjE2fSwicmVzdWx0cyI6W3sibG9jYXRpb24iOiJERUJFMDEwIiwiY2l0eSI6IkJlcmxpbiIsImNvdW50cnkiOiJERSIsImRpc3RhbmNlIjoyMzA2NjU3Ljk4ODg4Njc1MDMsIm1lYXN1cmVtZW50cyI6W3sicGFyYW1ldGVyIjoibzMiLCJ2YWx1ZSI6NTcuMDMsImxhc3RVcGRhdGVkIjoiMjAxOC0wNS0yN1QwNTowMDowMC4wMDBaIiwidW5pdCI6IsK1Zy9twrMiLCJzb3VyY2VOYW1lIjoiRUVBIEdlcm1hbnkiLCJhdmVyYWdpbmdQZXJpb2QiOnsidmFsdWUiOjEsInVuaXQiOiJob3VycyJ9fSx7InBhcmFtZXRlciI6Im5vMiIsInZhbHVlIjo4LjE1LCJsYXN0VXBkYXRlZCI6IjIwMTgtMDUtMjdUMDY6MDA6MDAuMDAwWiIsInVuaXQiOiLCtWcvbcKzIiwic291cmNlTmFtZSI6IkVFQSBHZXJtYW55IiwiYXZlcmFnaW5nUGVyaW9kIjp7InZhbHVlIjoxLCJ1bml0IjoiaG91cnMifX0seyJwYXJhbWV0ZXIiOiJwbTEwIiwidmFsdWUiOjI3LjE5LCJsYXN0VXBkYXRlZCI6IjIwMTgtMDUtMjdUMDY6MDA6MDAuMDAwWiIsInVuaXQiOiLCtWcvbcKzIiwic291cmNlTmFtZSI6IkVFQSBHZXJtYW55IiwiYXZlcmFnaW5nUGVyaW9kIjp7InZhbHVlIjoxLCJ1bml0IjoiaG91cnMifX1dLCJjb29yZGluYXRlcyI6eyJsYXRpdHVkZSI6NTIuNTQzMDQsImxvbmdpdHVkZSI6MTMuMzQ5MzI2fX0seyJsb2NhdGlvbiI6IkRFQkUwMTgiLCJjaXR5IjoiQmVybGluIiwiY291bnRyeSI6IkRFIiwiZGlzdGFuY2UiOjIzMDMyMTIuNjg1NzY1NTgzNSwibWVhc3VyZW1lbnRzIjpbeyJwYXJhbWV0ZXIiOiJubzIiLCJ2YWx1ZSI6MTEuMTYsImxhc3RVcGRhdGVkIjoiMjAxOC0wNS0yN1QwNjowMDowMC4wMDBaIiwidW5pdCI6IsK1Zy9twrMiLCJzb3VyY2VOYW1lIjoiRUVBIEdlcm1hbnkiLCJhdmVyYWdpbmdQZXJpb2QiOnsidmFsdWUiOjEsInVuaXQiOiJob3VycyJ9fV0sImNvb3JkaW5hdGVzIjp7ImxhdGl0dWRlIjo1Mi40ODU4MTMsImxvbmdpdHVkZSI6MTMuMzQ4Nzc1fX1dfQ==
+    http_version: 
+  recorded_at: Sun, 27 May 2018 17:01:38 GMT
+recorded_with: VCR 4.0.0

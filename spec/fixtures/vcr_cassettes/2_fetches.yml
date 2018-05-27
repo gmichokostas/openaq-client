@@ -1,0 +1,258 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openaq.org/v1/fetches?limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openaq.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, If-None-Match
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Date:
+      - Sun, 27 May 2018 16:50:15 GMT
+      Last-Modified:
+      - Sun, 27 May 2018 15:56:57 GMT
+      Vary:
+      - origin,accept-encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 123c1b8455da8ecd4abd0715a42e881e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - DuDsd6424b5qF-N9gkhzVi0QnyXenNS486kZy91tG-GVj_J5dxR2xw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"name":"openaq-api","license":"CC BY 4.0","website":"https://docs.openaq.org/","page":1,"limit":2,"found":104387},"results":[{"count":1014,"results":[{"message":"New
+        measurements inserted for EEA Andorra: 0","failures":[],"count":0,"duration":43.102,"sourceName":"EEA
+        Andorra"},{"message":"New measurements inserted for StateAir_AbuDhabi: 2","failures":[],"count":2,"duration":36.2,"sourceName":"StateAir_AbuDhabi"},{"message":"New
+        measurements inserted for Australia - New South Wales: 102","failures":[],"count":102,"duration":43.071,"sourceName":"Australia
+        - New South Wales"},{"message":"New measurements inserted for Australia -
+        Queensland: 105","failures":[],"count":105,"duration":47.947,"sourceName":"Australia
+        - Queensland"},{"message":"New measurements inserted for Australia - Tasmania:
+        0","failures":{"Unknown adapter error.":1},"count":0,"duration":3.917,"sourceName":"Australia
+        - Tasmania"},{"message":"New measurements inserted for Bosnia: 0","failures":{"Failure
+        to load data url.":1},"count":0,"duration":1.397,"sourceName":"Bosnia"},{"message":"New
+        measurements inserted for Bosnia_Tuzlanski: 0","failures":[],"count":0,"duration":43.587,"sourceName":"Bosnia_Tuzlanski"},{"message":"New
+        measurements inserted for StateAir_Dhaka: 0","failures":[],"count":0,"duration":41.379,"sourceName":"StateAir_Dhaka"},{"message":"New
+        measurements inserted for EEA Belgium: 0","failures":[],"count":0,"duration":15.611,"sourceName":"EEA
+        Belgium"},{"message":"New measurements inserted for StateAir_Manama: 2","failures":[],"count":2,"duration":41.376,"sourceName":"StateAir_Manama"},{"message":"New
+        measurements inserted for Sao Paulo: 0","failures":[],"count":0,"duration":61.014,"sourceName":"Sao
+        Paulo"},{"message":"New measurements inserted for EEA Switzerland: 0","failures":[],"count":0,"duration":44.44,"sourceName":"EEA
+        Switzerland"},{"message":"New measurements inserted for Chile - SINCA: 59","failures":[],"count":59,"duration":49.965,"sourceName":"Chile
+        - SINCA"},{"message":"New measurements inserted for Beijing US Embassy: 0","failures":[],"count":0,"duration":36.188,"sourceName":"Beijing
+        US Embassy"},{"message":"New measurements inserted for Chengdu: 0","failures":[],"count":0,"duration":36.188,"sourceName":"Chengdu"},{"message":"New
+        measurements inserted for Guangzhou: 0","failures":[],"count":0,"duration":36.187,"sourceName":"Guangzhou"},{"message":"New
+        measurements inserted for Shanghai: 1","failures":[],"count":1,"duration":36.187,"sourceName":"Shanghai"},{"message":"New
+        measurements inserted for Shenyang: 1","failures":[],"count":1,"duration":36.187,"sourceName":"Shenyang"},{"message":"New
+        measurements inserted for Hefei: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.402,"sourceName":"Hefei"},{"message":"New
+        measurements inserted for Huaibei: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.397,"sourceName":"Huaibei"},{"message":"New
+        measurements inserted for Bozhou: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.385,"sourceName":"Bozhou"},{"message":"New
+        measurements inserted for Suzhou: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.424,"sourceName":"Suzhou"},{"message":"New
+        measurements inserted for Bengbu: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.432,"sourceName":"Bengbu"},{"message":"New
+        measurements inserted for Fuyang: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.392,"sourceName":"Fuyang"},{"message":"New
+        measurements inserted for Huainan: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.379,"sourceName":"Huainan"},{"message":"New
+        measurements inserted for Chuzhou: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.436,"sourceName":"Chuzhou"},{"message":"New
+        measurements inserted for Lu''an: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.405,"sourceName":"Lu''an"},{"message":"New
+        measurements inserted for Ma''anshan: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.414,"sourceName":"Ma''anshan"},{"message":"New
+        measurements inserted for Wuhu: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.409,"sourceName":"Wuhu"},{"message":"New
+        measurements inserted for Xuancheng: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.388,"sourceName":"Xuancheng"},{"message":"New
+        measurements inserted for Tongling: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.341,"sourceName":"Tongling"},{"message":"New
+        measurements inserted for Chizhou: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.426,"sourceName":"Chizhou"},{"message":"New
+        measurements inserted for Anqing: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.454,"sourceName":"Anqing"},{"message":"New
+        measurements inserted for Huangshan: 0","failures":{"Unknown adapter error":1},"count":0,"duration":8.417,"sourceName":"Huangshan"},{"message":"New
+        measurements inserted for StateAir_Bogota: 0","failures":[],"count":0,"duration":3.203,"sourceName":"StateAir_Bogota"},{"message":"New
+        measurements inserted for EEA Czech Republic: 0","failures":[],"count":0,"duration":49.96,"sourceName":"EEA
+        Czech Republic"},{"message":"New measurements inserted for EEA Germany: 0","failures":[],"count":0,"duration":55.847,"sourceName":"EEA
+        Germany"},{"message":"New measurements inserted for EEA Denmark: 0","failures":[],"count":0,"duration":44.754,"sourceName":"EEA
+        Denmark"},{"message":"New measurements inserted for EEA Spain: 0","failures":[],"count":0,"duration":38.151,"sourceName":"EEA
+        Spain"},{"message":"New measurements inserted for Andalucia: 0","failures":[],"count":0,"duration":14.546,"sourceName":"Andalucia"},{"message":"New
+        measurements inserted for StateAir_Addis_Ababa_Central: 1","failures":[],"count":1,"duration":43.045,"sourceName":"StateAir_Addis_Ababa_Central"},{"message":"New
+        measurements inserted for StateAir_Addis_Ababa_School: 0","failures":[],"count":0,"duration":3.195,"sourceName":"StateAir_Addis_Ababa_School"},{"message":"New
+        measurements inserted for EEA Finland: 0","failures":[],"count":0,"duration":47.215,"sourceName":"EEA
+        Finland"},{"message":"New measurements inserted for EEA France: 0","failures":[],"count":0,"duration":53.152,"sourceName":"EEA
+        France"},{"message":"New measurements inserted for DEFRA: 4","failures":[],"count":4,"duration":46.348,"sourceName":"DEFRA"},{"message":"New
+        measurements inserted for EEA Gibraltar: 0","failures":[],"count":0,"duration":8.153,"sourceName":"EEA
+        Gibraltar"},{"message":"New measurements inserted for Hong Kong: 87","failures":[],"count":87,"duration":45.167,"sourceName":"Hong
+        Kong"},{"message":"New measurements inserted for EEA Croatia: 0","failures":[],"count":0,"duration":44.739,"sourceName":"EEA
+        Croatia"},{"message":"New measurements inserted for EEA Hungary: 0","failures":[],"count":0,"duration":47.198,"sourceName":"EEA
+        Hungary"},{"message":"New measurements inserted for StateAir_JakartaSouth:
+        0","failures":[],"count":0,"duration":3.172,"sourceName":"StateAir_JakartaSouth"},{"message":"New
+        measurements inserted for StateAir_JakartaCentral: 1","failures":[],"count":1,"duration":43.024,"sourceName":"StateAir_JakartaCentral"},{"message":"New
+        measurements inserted for EEA Ireland: 0","failures":[],"count":0,"duration":13.425,"sourceName":"EEA
+        Ireland"},{"message":"New measurements inserted for Israel: 634","failures":[],"count":634,"duration":160.69,"sourceName":"Israel"},{"message":"New
+        measurements inserted for caaqm: 0","failures":{"Failure to load data url.":1},"count":0,"duration":8.958,"sourceName":"caaqm"},{"message":"New
+        measurements inserted for StateAir_Chennai: 0","failures":[],"count":0,"duration":43.535,"sourceName":"StateAir_Chennai"},{"message":"New
+        measurements inserted for StateAir_Hyderabad: 0","failures":[],"count":0,"duration":44.392,"sourceName":"StateAir_Hyderabad"},{"message":"New
+        measurements inserted for StateAir_Kolkata: 0","failures":[],"count":0,"duration":3.172,"sourceName":"StateAir_Kolkata"},{"message":"New
+        measurements inserted for StateAir_Mumbai: 0","failures":[],"count":0,"duration":44.391,"sourceName":"StateAir_Mumbai"},{"message":"New
+        measurements inserted for StateAir_NewDelhi: 0","failures":[],"count":0,"duration":45.147,"sourceName":"StateAir_NewDelhi"},{"message":"New
+        measurements inserted for ARPALAZIO: 0","failures":[],"count":0,"duration":35.346,"sourceName":"ARPALAZIO"},{"message":"New
+        measurements inserted for Arpae Emilia-Romagna: 0","failures":[],"count":0,"duration":52.744,"sourceName":"Arpae
+        Emilia-Romagna"},{"message":"New measurements inserted for AirNow Kenya: 0","failures":[],"count":0,"duration":19.792,"sourceName":"AirNow
+        Kenya"},{"message":"New measurements inserted for StateAir_KuwaitCity: 1","failures":[],"count":1,"duration":45.475,"sourceName":"StateAir_KuwaitCity"},{"message":"New
+        measurements inserted for StateAir_Colombo: 1","failures":[],"count":1,"duration":45.474,"sourceName":"StateAir_Colombo"},{"message":"New
+        measurements inserted for EEA Lithuania: 0","failures":[],"count":0,"duration":39.656,"sourceName":"EEA
+        Lithuania"},{"message":"New measurements inserted for EEA Luxemburg: 0","failures":[],"count":0,"duration":49.33,"sourceName":"EEA
+        Luxemburg"},{"message":"New measurements inserted for EEA Latvia: 0","failures":[],"count":0,"duration":49.58,"sourceName":"EEA
+        Latvia"},{"message":"New measurements inserted for EEA Macedonia: 0","failures":[],"count":0,"duration":49.579,"sourceName":"EEA
+        Macedonia"},{"message":"New measurements inserted for Agaar.mn: 11","failures":[],"count":11,"duration":133.548,"sourceName":"Agaar.mn"},{"message":"New
+        measurements inserted for StateAir_Ulaanbaatar: 1","failures":[],"count":1,"duration":47.877,"sourceName":"StateAir_Ulaanbaatar"},{"message":"New
+        measurements inserted for Tsag-Agaar.gov.mn: 0","failures":[],"count":0,"duration":54.235,"sourceName":"Tsag-Agaar.gov.mn"},{"message":"New
+        measurements inserted for EEA Malta: 0","failures":[],"count":0,"duration":49.576,"sourceName":"EEA
+        Malta"},{"message":"New measurements inserted for Netherlands: 0","failures":{"Failure
+        to load data url.":1},"count":0,"duration":28.712,"sourceName":"Netherlands"},{"message":"New
+        measurements inserted for Norway: 0","failures":[],"count":0,"duration":46.307,"sourceName":"Norway"},{"message":"New
+        measurements inserted for StateAir_PhoraDurbar: 0","failures":[],"count":0,"duration":45.852,"sourceName":"StateAir_PhoraDurbar"},{"message":"New
+        measurements inserted for StateAir_Kathmandu: 0","failures":[],"count":0,"duration":45.463,"sourceName":"StateAir_Kathmandu"},{"message":"New
+        measurements inserted for StateAir_Lima: 1","failures":[],"count":1,"duration":45.851,"sourceName":"StateAir_Lima"},{"message":"New
+        measurements inserted for Senamhi: 0","failures":[],"count":0,"duration":45.463,"sourceName":"Senamhi"},{"message":"New
+        measurements inserted for EEA Portugal: 0","failures":[],"count":0,"duration":49.573,"sourceName":"EEA
+        Portugal"},{"message":"New measurements inserted for EEA Servia: 0","failures":[],"count":0,"duration":47.87,"sourceName":"EEA
+        Servia"},{"message":"New measurements inserted for Sweden: 0","failures":[],"count":0,"duration":44.368,"sourceName":"Sweden"},{"message":"New
+        measurements inserted for Slovenian Environment Agency: 0","failures":[],"count":0,"duration":43.511,"sourceName":"Slovenian
+        Environment Agency"},{"message":"New measurements inserted for EEA Slovakia:
+        0","failures":[],"count":0,"duration":49.316,"sourceName":"EEA Slovakia"},{"message":"New
+        measurements inserted for Thailand: 0","failures":[],"count":0,"duration":45.456,"sourceName":"Thailand"},{"message":"New
+        measurements inserted for Turkey: 0","failures":[],"count":0,"duration":70.565,"sourceName":"Turkey"},{"message":"New
+        measurements inserted for StateAir_Kampala: 0","failures":[],"count":0,"duration":5.581,"sourceName":"StateAir_Kampala"},{"message":"New
+        measurements inserted for AirNow: 0","failures":[],"count":0,"duration":0.068,"sourceName":"AirNow"},{"message":"New
+        measurements inserted for StateAir_Hanoi: 0","failures":[],"count":0,"duration":5.583,"sourceName":"StateAir_Hanoi"},{"message":"New
+        measurements inserted for Ho Chi Minh City: 0","failures":[],"count":0,"duration":5.587,"sourceName":"Ho
+        Chi Minh City"},{"message":"New measurements inserted for StateAir_Pristina:
+        0","failures":[],"count":0,"duration":5.589,"sourceName":"StateAir_Pristina"},{"message":"New
+        measurements inserted for Richards Bay: 0","failures":[],"count":0,"duration":117.664,"sourceName":"Richards
+        Bay"}],"timeStarted":"2018-05-27T16:31:07.825Z","timeEnded":"2018-05-27T16:33:48.598Z"},{"count":4465,"results":[{"message":"New
+        measurements inserted for EEA Andorra: 0","failures":[],"count":0,"duration":40.167,"sourceName":"EEA
+        Andorra"},{"message":"New measurements inserted for StateAir_AbuDhabi: 0","failures":[],"count":0,"duration":1.459,"sourceName":"StateAir_AbuDhabi"},{"message":"New
+        measurements inserted for Australia - New South Wales: 0","failures":[],"count":0,"duration":3.517,"sourceName":"Australia
+        - New South Wales"},{"message":"New measurements inserted for Australia -
+        Queensland: 0","failures":{"socket hang up":1},"count":0,"duration":34.541,"sourceName":"Australia
+        - Queensland"},{"message":"New measurements inserted for Australia - Tasmania:
+        0","failures":{"Unknown adapter error.":1},"count":0,"duration":1.864,"sourceName":"Australia
+        - Tasmania"},{"message":"New measurements inserted for Bosnia: 0","failures":{"Failure
+        to load data url.":1},"count":0,"duration":1.548,"sourceName":"Bosnia"},{"message":"New
+        measurements inserted for Bosnia_Tuzlanski: 0","failures":[],"count":0,"duration":45.052,"sourceName":"Bosnia_Tuzlanski"},{"message":"New
+        measurements inserted for StateAir_Dhaka: 0","failures":[],"count":0,"duration":2.333,"sourceName":"StateAir_Dhaka"},{"message":"New
+        measurements inserted for EEA Belgium: 0","failures":[],"count":0,"duration":28.321,"sourceName":"EEA
+        Belgium"},{"message":"New measurements inserted for StateAir_Manama: 0","failures":[],"count":0,"duration":2.047,"sourceName":"StateAir_Manama"},{"message":"New
+        measurements inserted for Sao Paulo: 0","failures":[],"count":0,"duration":82.71,"sourceName":"Sao
+        Paulo"},{"message":"New measurements inserted for EEA Switzerland: 0","failures":[],"count":0,"duration":50.355,"sourceName":"EEA
+        Switzerland"},{"message":"New measurements inserted for Chile - SINCA: 13","failures":[],"count":13,"duration":60.029,"sourceName":"Chile
+        - SINCA"},{"message":"New measurements inserted for Beijing US Embassy: 0","failures":[],"count":0,"duration":1.966,"sourceName":"Beijing
+        US Embassy"},{"message":"New measurements inserted for Chengdu: 0","failures":[],"count":0,"duration":1.928,"sourceName":"Chengdu"},{"message":"New
+        measurements inserted for Guangzhou: 0","failures":[],"count":0,"duration":1.837,"sourceName":"Guangzhou"},{"message":"New
+        measurements inserted for Shanghai: 0","failures":[],"count":0,"duration":1.882,"sourceName":"Shanghai"},{"message":"New
+        measurements inserted for Shenyang: 0","failures":[],"count":0,"duration":1.986,"sourceName":"Shenyang"},{"message":"New
+        measurements inserted for Hefei: 60","failures":[],"count":60,"duration":59.5,"sourceName":"Hefei"},{"message":"New
+        measurements inserted for Huaibei: 18","failures":[],"count":18,"duration":59.5,"sourceName":"Huaibei"},{"message":"New
+        measurements inserted for Bozhou: 12","failures":[],"count":12,"duration":59.5,"sourceName":"Bozhou"},{"message":"New
+        measurements inserted for Suzhou: 18","failures":[],"count":18,"duration":59.499,"sourceName":"Suzhou"},{"message":"New
+        measurements inserted for Bengbu: 35","failures":[],"count":35,"duration":59.83,"sourceName":"Bengbu"},{"message":"New
+        measurements inserted for Fuyang: 18","failures":[],"count":18,"duration":59.499,"sourceName":"Fuyang"},{"message":"New
+        measurements inserted for Huainan: 36","failures":[],"count":36,"duration":59.499,"sourceName":"Huainan"},{"message":"New
+        measurements inserted for Chuzhou: 18","failures":[],"count":18,"duration":59.499,"sourceName":"Chuzhou"},{"message":"New
+        measurements inserted for Lu''an: 24","failures":[],"count":24,"duration":59.499,"sourceName":"Lu''an"},{"message":"New
+        measurements inserted for Ma''anshan: 30","failures":[],"count":30,"duration":59.499,"sourceName":"Ma''anshan"},{"message":"New
+        measurements inserted for Wuhu: 24","failures":[],"count":24,"duration":59.499,"sourceName":"Wuhu"},{"message":"New
+        measurements inserted for Xuancheng: 18","failures":[],"count":18,"duration":59.83,"sourceName":"Xuancheng"},{"message":"New
+        measurements inserted for Tongling: 36","failures":[],"count":36,"duration":59.498,"sourceName":"Tongling"},{"message":"New
+        measurements inserted for Chizhou: 18","failures":[],"count":18,"duration":59.498,"sourceName":"Chizhou"},{"message":"New
+        measurements inserted for Anqing: 24","failures":[],"count":24,"duration":59.498,"sourceName":"Anqing"},{"message":"New
+        measurements inserted for Huangshan: 18","failures":[],"count":18,"duration":59.498,"sourceName":"Huangshan"},{"message":"New
+        measurements inserted for StateAir_Bogota: 1","failures":[],"count":1,"duration":45.456,"sourceName":"StateAir_Bogota"},{"message":"New
+        measurements inserted for EEA Czech Republic: 0","failures":[],"count":0,"duration":63.969,"sourceName":"EEA
+        Czech Republic"},{"message":"New measurements inserted for EEA Germany: 0","failures":[],"count":0,"duration":64.721,"sourceName":"EEA
+        Germany"},{"message":"New measurements inserted for EEA Denmark: 0","failures":[],"count":0,"duration":45.034,"sourceName":"EEA
+        Denmark"},{"message":"New measurements inserted for EEA Spain: 0","failures":[],"count":0,"duration":35.558,"sourceName":"EEA
+        Spain"},{"message":"New measurements inserted for Andalucia: 0","failures":[],"count":0,"duration":43.981,"sourceName":"Andalucia"},{"message":"New
+        measurements inserted for StateAir_Addis_Ababa_Central: 0","failures":[],"count":0,"duration":45.442,"sourceName":"StateAir_Addis_Ababa_Central"},{"message":"New
+        measurements inserted for StateAir_Addis_Ababa_School: 2","failures":[],"count":2,"duration":34.739,"sourceName":"StateAir_Addis_Ababa_School"},{"message":"New
+        measurements inserted for EEA Finland: 0","failures":[],"count":0,"duration":50.335,"sourceName":"EEA
+        Finland"},{"message":"New measurements inserted for EEA France: 0","failures":[],"count":0,"duration":69.111,"sourceName":"EEA
+        France"},{"message":"New measurements inserted for DEFRA: 345","failures":[],"count":345,"duration":60.403,"sourceName":"DEFRA"},{"message":"New
+        measurements inserted for EEA Gibraltar: 0","failures":[],"count":0,"duration":12.482,"sourceName":"EEA
+        Gibraltar"},{"message":"New measurements inserted for Hong Kong: 0","failures":[],"count":0,"duration":58.593,"sourceName":"Hong
+        Kong"},{"message":"New measurements inserted for EEA Croatia: 0","failures":[],"count":0,"duration":45.435,"sourceName":"EEA
+        Croatia"},{"message":"New measurements inserted for EEA Hungary: 0","failures":[],"count":0,"duration":50.326,"sourceName":"EEA
+        Hungary"},{"message":"New measurements inserted for StateAir_JakartaSouth:
+        1","failures":[],"count":1,"duration":45.432,"sourceName":"StateAir_JakartaSouth"},{"message":"New
+        measurements inserted for StateAir_JakartaCentral: 0","failures":[],"count":0,"duration":45.431,"sourceName":"StateAir_JakartaCentral"},{"message":"New
+        measurements inserted for EEA Ireland: 0","failures":[],"count":0,"duration":26.465,"sourceName":"EEA
+        Ireland"},{"message":"New measurements inserted for Israel: 1019","failures":[],"count":1019,"duration":188.124,"sourceName":"Israel"},{"message":"New
+        measurements inserted for caaqm: 0","failures":{"Failure to load data url.":1},"count":0,"duration":32.705,"sourceName":"caaqm"},{"message":"New
+        measurements inserted for StateAir_Chennai: 0","failures":[],"count":0,"duration":59.103,"sourceName":"StateAir_Chennai"},{"message":"New
+        measurements inserted for StateAir_Hyderabad: 0","failures":[],"count":0,"duration":58.584,"sourceName":"StateAir_Hyderabad"},{"message":"New
+        measurements inserted for StateAir_Kolkata: 0","failures":[],"count":0,"duration":59.103,"sourceName":"StateAir_Kolkata"},{"message":"New
+        measurements inserted for StateAir_Mumbai: 0","failures":[],"count":0,"duration":59.103,"sourceName":"StateAir_Mumbai"},{"message":"New
+        measurements inserted for StateAir_NewDelhi: 0","failures":[],"count":0,"duration":26.813,"sourceName":"StateAir_NewDelhi"},{"message":"New
+        measurements inserted for ARPALAZIO: 0","failures":[],"count":0,"duration":80.172,"sourceName":"ARPALAZIO"},{"message":"New
+        measurements inserted for Arpae Emilia-Romagna: 0","failures":[],"count":0,"duration":71.437,"sourceName":"Arpae
+        Emilia-Romagna"},{"message":"New measurements inserted for AirNow Kenya: 0","failures":[],"count":0,"duration":23.188,"sourceName":"AirNow
+        Kenya"},{"message":"New measurements inserted for StateAir_KuwaitCity: 0","failures":[],"count":0,"duration":59.096,"sourceName":"StateAir_KuwaitCity"},{"message":"New
+        measurements inserted for StateAir_Colombo: 0","failures":[],"count":0,"duration":26.916,"sourceName":"StateAir_Colombo"},{"message":"New
+        measurements inserted for EEA Lithuania: 0","failures":[],"count":0,"duration":39.434,"sourceName":"EEA
+        Lithuania"},{"message":"New measurements inserted for EEA Luxemburg: 0","failures":[],"count":0,"duration":59.986,"sourceName":"EEA
+        Luxemburg"},{"message":"New measurements inserted for EEA Latvia: 0","failures":[],"count":0,"duration":59.985,"sourceName":"EEA
+        Latvia"},{"message":"New measurements inserted for EEA Macedonia: 0","failures":[],"count":0,"duration":60.791,"sourceName":"EEA
+        Macedonia"},{"message":"New measurements inserted for Agaar.mn: 4","failures":[],"count":4,"duration":139.103,"sourceName":"Agaar.mn"},{"message":"New
+        measurements inserted for StateAir_Ulaanbaatar: 0","failures":[],"count":0,"duration":8.434,"sourceName":"StateAir_Ulaanbaatar"},{"message":"New
+        measurements inserted for Tsag-Agaar.gov.mn: 0","failures":[],"count":0,"duration":65.868,"sourceName":"Tsag-Agaar.gov.mn"},{"message":"New
+        measurements inserted for EEA Malta: 0","failures":[],"count":0,"duration":59.979,"sourceName":"EEA
+        Malta"},{"message":"New measurements inserted for Netherlands: 0","failures":{"Failure
+        to load data url.":1},"count":0,"duration":43.947,"sourceName":"Netherlands"},{"message":"New
+        measurements inserted for Norway: 0","failures":[],"count":0,"duration":59.779,"sourceName":"Norway"},{"message":"New
+        measurements inserted for StateAir_PhoraDurbar: 0","failures":[],"count":0,"duration":59.083,"sourceName":"StateAir_PhoraDurbar"},{"message":"New
+        measurements inserted for StateAir_Kathmandu: 0","failures":[],"count":0,"duration":59.083,"sourceName":"StateAir_Kathmandu"},{"message":"New
+        measurements inserted for StateAir_Lima: 0","failures":[],"count":0,"duration":8.434,"sourceName":"StateAir_Lima"},{"message":"New
+        measurements inserted for Senamhi: 0","failures":[],"count":0,"duration":59.447,"sourceName":"Senamhi"},{"message":"New
+        measurements inserted for EEA Portugal: 0","failures":[],"count":0,"duration":63.396,"sourceName":"EEA
+        Portugal"},{"message":"New measurements inserted for EEA Servia: 0","failures":[],"count":0,"duration":59.972,"sourceName":"EEA
+        Servia"},{"message":"New measurements inserted for Sweden: 0","failures":[],"count":0,"duration":45.799,"sourceName":"Sweden"},{"message":"New
+        measurements inserted for Slovenian Environment Agency: 0","failures":[],"count":0,"duration":40.07,"sourceName":"Slovenian
+        Environment Agency"},{"message":"New measurements inserted for EEA Slovakia:
+        0","failures":[],"count":0,"duration":63.915,"sourceName":"EEA Slovakia"},{"message":"New
+        measurements inserted for Thailand: 5","failures":[],"count":5,"duration":59.075,"sourceName":"Thailand"},{"message":"New
+        measurements inserted for Turkey: 0","failures":[],"count":0,"duration":80.145,"sourceName":"Turkey"},{"message":"New
+        measurements inserted for StateAir_Kampala: 0","failures":[],"count":0,"duration":8.438,"sourceName":"StateAir_Kampala"},{"message":"New
+        measurements inserted for AirNow: 2668","failures":[],"count":2668,"duration":73.139,"sourceName":"AirNow"},{"message":"New
+        measurements inserted for StateAir_Hanoi: 0","failures":[],"count":0,"duration":8.448,"sourceName":"StateAir_Hanoi"},{"message":"New
+        measurements inserted for Ho Chi Minh City: 0","failures":[],"count":0,"duration":8.445,"sourceName":"Ho
+        Chi Minh City"},{"message":"New measurements inserted for StateAir_Pristina:
+        0","failures":[],"count":0,"duration":8.425,"sourceName":"StateAir_Pristina"},{"message":"New
+        measurements inserted for Richards Bay: 0","failures":[],"count":0,"duration":121.92,"sourceName":"Richards
+        Bay"}],"timeStarted":"2018-05-27T16:41:08.714Z","timeEnded":"2018-05-27T16:44:16.906Z"}]}'
+    http_version: 
+  recorded_at: Sun, 27 May 2018 16:50:15 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openaq.org/v1/locations?city=Berlin&country=DE&limit=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openaq.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, If-None-Match
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Date:
+      - Sun, 27 May 2018 17:01:39 GMT
+      Last-Modified:
+      - Sun, 27 May 2018 15:56:57 GMT
+      Vary:
+      - origin,accept-encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 176dbcd59cf31609642b0109beec302f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - _CG96yL3WFOeiLmnAKNhWkJ2BfqLrTanaHn9HycuPxd_Qbmgu3RL8g==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"name":"openaq-api","license":"CC BY 4.0","website":"https://docs.openaq.org/","page":1,"limit":2,"found":16},"results":[{"location":"DEBE010","city":"Berlin","country":"DE","count":9379,"sourceNames":["EEA
+        Germany"],"lastUpdated":"2018-05-27T06:00:00.000Z","firstUpdated":"2017-09-21T00:00:00.000Z","parameters":["pm10","o3","no2"],"sourceName":"EEA
+        Germany","coordinates":{"latitude":52.54304,"longitude":13.349326}},{"location":"DEBE018","city":"Berlin","country":"DE","count":2950,"sourceNames":["EEA
+        Germany"],"lastUpdated":"2018-05-27T06:00:00.000Z","firstUpdated":"2017-09-21T00:00:00.000Z","parameters":["no2"],"sourceName":"EEA
+        Germany","coordinates":{"latitude":52.485813,"longitude":13.348775}}]}'
+    http_version: 
+  recorded_at: Sun, 27 May 2018 17:01:39 GMT
+recorded_with: VCR 4.0.0

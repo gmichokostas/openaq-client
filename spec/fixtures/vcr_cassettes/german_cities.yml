@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openaq.org/v1/cities?country=DE&limit=2&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.openaq.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, If-None-Match
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate, Server-Authorization
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - no-cache
+      Date:
+      - Sun, 27 May 2018 16:33:49 GMT
+      Last-Modified:
+      - Sun, 27 May 2018 15:56:57 GMT
+      Vary:
+      - origin,accept-encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 176dbcd59cf31609642b0109beec302f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - PuR0k4hO1Acy_-QI3rIsVIF0qr_cJSgx9ytDcuaXHtZC_JyFKFp06Q==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXRhIjp7Im5hbWUiOiJvcGVuYXEtYXBpIiwibGljZW5zZSI6IkNDIEJZIDQuMCIsIndlYnNpdGUiOiJodHRwczovL2RvY3Mub3BlbmFxLm9yZy8iLCJwYWdlIjoxLCJsaW1pdCI6MiwiZm91bmQiOjM2fSwicmVzdWx0cyI6W3siY2l0eSI6IkJlcmxpbiIsImNvdW50cnkiOiJERSIsImxvY2F0aW9ucyI6MTYsImNvdW50IjoxMTU5MTZ9LHsiY2l0eSI6IkJhZGVuLVfDvHJ0dGVtYmVyZyIsImNvdW50cnkiOiJERSIsImxvY2F0aW9ucyI6NDIsImNvdW50IjozMzI2ODB9XX0=
+    http_version: 
+  recorded_at: Sun, 27 May 2018 16:33:51 GMT
+recorded_with: VCR 4.0.0
