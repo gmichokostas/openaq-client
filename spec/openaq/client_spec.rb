@@ -18,6 +18,14 @@ RSpec.describe Openaq::Client do
         expect(german_cities[1]['country']).to eql('DE')
       end
     end
+
+    context 'when a bad request is happening' do
+      it 'is raising an Openag::Error' do
+        stub_request(
+          :get, 'https://api.openaq.org/v1/cities'
+        ).to_raise(Openaq::Error.new('Bad Request'))
+      end
+    end
   end
 
   describe '#countries' do
