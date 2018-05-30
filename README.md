@@ -29,6 +29,9 @@ client = Openaq.client
 
 cities = client.cities # default params
 cities = client.cities(page: 1, limit: 5)
+
+all_cities = client.all_cities # returns an Enumerator
+all_cities.detect{|item| item['city'] == 'Berlin'}
 ```
 
 ## Contributing
