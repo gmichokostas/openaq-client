@@ -26,8 +26,12 @@ Or install it yourself as:
 require 'openaq'
 
 client = Openaq.client
+begin
+  client.cities # default params
+rescue Openaq::Error => e
+  puts e.message
+end
 
-cities = client.cities # default params
 cities = client.cities(page: 1, limit: 5)
 
 all_cities = client.all_cities # returns an Enumerator

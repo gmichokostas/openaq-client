@@ -101,7 +101,7 @@ module Openaq
       # Provides data about individual measurements
       #
       # @param params please read the {https://docs.openaq.org Api Documentation}
-      # @return [<Hash>]
+      # @return [Array<Hash>]
 
       # @!method parameters(params = {})
       # Provides a simple listing of parameters within the platform.
