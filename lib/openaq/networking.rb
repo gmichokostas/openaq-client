@@ -2,7 +2,6 @@ module Openaq
   module Networking
 
     # @raise [Openaq::Error] if the request is not successful
-
     def get(path, params={})
       uri = URI(Openaq.url + path)
       uri.query = URI.encode_www_form(params)
@@ -22,7 +21,6 @@ module Openaq
     end
 
     # @raise [StopIteration] when there are no more results
-
     def paginated_get(path, params={})
       Enumerator.new do |yielder|
         page = 1

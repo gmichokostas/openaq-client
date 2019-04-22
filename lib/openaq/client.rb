@@ -126,6 +126,5 @@ module Openaq
       end
     end
 
-
   end
 end

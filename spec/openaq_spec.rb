@@ -1,5 +1,4 @@
 RSpec.describe Openaq do
-
   it "has a version number" do
     expect(Openaq::VERSION).not_to be nil
     expect(Openaq::VERSION).to eql "0.2.0"
@@ -10,5 +9,4 @@ RSpec.describe Openaq do
       expect(Openaq.client).to be_a(Openaq::Client)
     end
   end
-
 end

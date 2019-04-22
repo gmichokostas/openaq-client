@@ -1,3 +1,5 @@
+require 'vcr_helper'
+
 RSpec.describe Openaq::Client do
   let(:client) { Openaq.client }
 
