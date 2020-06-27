@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "openaq/networking"
 
 module Openaq
@@ -125,6 +127,5 @@ module Openaq
         paginated_get("/#{name}", params)
       end
     end
-
   end
 end

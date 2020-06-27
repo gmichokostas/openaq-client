@@ -38,24 +38,26 @@ http_interactions:
       - WWW-Authenticate, Server-Authorization
       Access-Control-Max-Age:
       - '86400'
+      Last-Modified:
+      - Sat, 27 Jun 2020 12:15:48 GMT
       Cache-Control:
       - no-cache
       Date:
-      - Sun, 27 May 2018 17:03:38 GMT
-      Last-Modified:
-      - Sun, 27 May 2018 15:56:57 GMT
+      - Sat, 27 Jun 2020 19:58:01 GMT
       Vary:
-      - origin,accept-encoding
+      - origin
       X-Cache:
-      - Miss from cloudfront
+      - RefreshHit from cloudfront
       Via:
-      - 1.1 28dd86caf1f9f4ffb0617db28e093a59.cloudfront.net (CloudFront)
+      - 1.1 c2a926ef1bafe1ab239d4761594a8099.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - FRA2-C1
       X-Amz-Cf-Id:
-      - RrfQEmaGRh4u3b0STHpOIe3s1Kq6IlzQl30pg20lcReMyR5AW-Z7DQ==
+      - u34bLx0Bk3PhUEHBBvlQ4Mrdc_EUBirTpd90VhTTcmxOmGLZFbKa4A==
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJtZXRhIjp7Im5hbWUiOiJvcGVuYXEtYXBpIiwibGljZW5zZSI6IkNDIEJZIDQuMCIsIndlYnNpdGUiOiJodHRwczovL2RvY3Mub3BlbmFxLm9yZy8iLCJwYWdlIjoxLCJsaW1pdCI6MiwiZm91bmQiOjM3NDE0fSwicmVzdWx0cyI6W3sibG9jYXRpb24iOiJERUJFMDYyIiwicGFyYW1ldGVyIjoibm8yIiwiZGF0ZSI6eyJ1dGMiOiIyMDE4LTA1LTI3VDA2OjAwOjAwLjAwMFoiLCJsb2NhbCI6IjIwMTgtMDUtMjdUMDg6MDA6MDArMDI6MDAifSwidmFsdWUiOjMuNDQsInVuaXQiOiLCtWcvbcKzIiwiY29vcmRpbmF0ZXMiOnsibGF0aXR1ZGUiOjUyLjY1MzI2OSwibG9uZ2l0dWRlIjoxMy4yOTYwODF9LCJjb3VudHJ5IjoiREUiLCJjaXR5IjoiQmVybGluIn0seyJsb2NhdGlvbiI6IkRFQkUwNjgiLCJwYXJhbWV0ZXIiOiJubzIiLCJkYXRlIjp7InV0YyI6IjIwMTgtMDUtMjdUMDY6MDA6MDAuMDAwWiIsImxvY2FsIjoiMjAxOC0wNS0yN1QwODowMDowMCswMjowMCJ9LCJ2YWx1ZSI6OC44NSwidW5pdCI6IsK1Zy9twrMiLCJjb29yZGluYXRlcyI6eyJsYXRpdHVkZSI6NTIuNTEzNjA2LCJsb25naXR1ZGUiOjEzLjQxODgzM30sImNvdW50cnkiOiJERSIsImNpdHkiOiJCZXJsaW4ifV19
-    http_version: 
-  recorded_at: Sun, 27 May 2018 17:03:38 GMT
+        eyJtZXRhIjp7Im5hbWUiOiJvcGVuYXEtYXBpIiwibGljZW5zZSI6IkNDIEJZIDQuMCIsIndlYnNpdGUiOiJodHRwczovL2RvY3Mub3BlbmFxLm9yZy8iLCJwYWdlIjoxLCJsaW1pdCI6MiwiZm91bmQiOjM2MjE2OH0sInJlc3VsdHMiOlt7ImxvY2F0aW9uIjoiREVCRTAxMCIsInBhcmFtZXRlciI6InBtMTAiLCJkYXRlIjp7InV0YyI6IjIwMjAtMDYtMjdUMDE6MDA6MDAuMDAwWiIsImxvY2FsIjoiMjAyMC0wNi0yN1QwMzowMDowMCswMjowMCJ9LCJ2YWx1ZSI6MjAuNzIsInVuaXQiOiLCtWcvbcKzIiwiY29vcmRpbmF0ZXMiOnsibGF0aXR1ZGUiOjUyLjU0MzA0MSwibG9uZ2l0dWRlIjoxMy4zNDkzMjZ9LCJjb3VudHJ5IjoiREUiLCJjaXR5IjoiQmVybGluIn0seyJsb2NhdGlvbiI6IkRFQkUwMTAiLCJwYXJhbWV0ZXIiOiJvMyIsImRhdGUiOnsidXRjIjoiMjAyMC0wNi0yN1QwMTowMDowMC4wMDBaIiwibG9jYWwiOiIyMDIwLTA2LTI3VDAzOjAwOjAwKzAyOjAwIn0sInZhbHVlIjo3NS4yMiwidW5pdCI6IsK1Zy9twrMiLCJjb29yZGluYXRlcyI6eyJsYXRpdHVkZSI6NTIuNTQzMDQxLCJsb25naXR1ZGUiOjEzLjM0OTMyNn0sImNvdW50cnkiOiJERSIsImNpdHkiOiJCZXJsaW4ifV19
+    http_version:
+  recorded_at: Sat, 27 Jun 2020 19:58:01 GMT
 recorded_with: VCR 4.0.0

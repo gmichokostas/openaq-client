@@ -1,5 +1,4 @@
-require 'json'
-require 'net/http'
+# frozen_string_literal: true
 
 require "openaq/client"
 require "openaq/version"

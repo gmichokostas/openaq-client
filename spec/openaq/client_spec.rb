@@ -1,7 +1,7 @@
 require 'vcr_helper'
 
 RSpec.describe Openaq::Client do
-  let(:client) { Openaq.client }
+  let(:client) { described_class.new }
 
   describe '#cities' do
     it 'provides a simple listing of cities within the platform' do
@@ -23,9 +23,13 @@ RSpec.describe Openaq::Client do
 
     context 'when a bad request is happening' do
       it 'is raising an Openag::Error' do
-        stub_request(
-          :get, 'https://api.openaq.org/v1/cities'
-        ).to_raise(Openaq::Error.new('Bad Request'))
+        stub_request(:get, 'https://api.openaq.org/v1/cities')
+          .with(query: {'page': 'foo'})
+          .to_raise(Openaq::Error.new('Bad Request'))
+
+        expect {
+          client.cities page: 'foo'
+        }.to raise_error(Openaq::Error)
       end
     end
   end

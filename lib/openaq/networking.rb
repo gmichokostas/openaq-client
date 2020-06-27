@@ -1,27 +1,29 @@
+# frozen_string_literal: true
+
+require 'json'
+require 'net/http'
+
 module Openaq
   module Networking
+    PARAMS = {}.freeze
 
     # @raise [Openaq::Error] if the request is not successful
-    def get(path, params={})
-      uri = URI(Openaq.url + path)
-      uri.query = URI.encode_www_form(params)
+    def get(path, params = PARAMS)
+      uri             = build_uri(path, params)
+      response        = Net::HTTP.get_response(uri)
+      parsed_response = JSON.parse(response.body)
 
-      begin
-        response = Net::HTTP.get_response(uri)
-      rescue Timeout::Error, Errno::ECONNREFUSED => e
-        raise Openaq::Error, e.message
+      if not response.is_a?(Net::HTTPSuccess)
+        err_msg = "#{parsed_response['error']}, #{parsed_response['message']}"
+        raise Openaq::Error, err_msg
       end
 
-      parsed_response = JSON.parse(response.body) rescue { "results" => [] }
-      if !response.is_a?(Net::HTTPSuccess)
-        raise Openaq::Error, parsed_response["error"] || "Openaq responded with #{response.code}."
-      end
-
-      parsed_response["results"]
+      parsed_response['results']
     end
 
     # @raise [StopIteration] when there are no more results
-    def paginated_get(path, params={})
+    # @raise [Openaq::Error] if the request is not successful
+    def paginated_get(path, params = PARAMS)
       Enumerator.new do |yielder|
         page = 1
         params = { page: page }.merge(params)
@@ -38,5 +40,12 @@ module Openaq
       end.lazy
     end
 
+    private
+
+    def build_uri(path, params)
+      uri = URI(Openaq.url + path)
+      uri.query = URI.encode_www_form(params)
+      uri
+    end
   end
 end
