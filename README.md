@@ -3,6 +3,7 @@
 This project contains the Ruby wrapper for the [Open AQ API](https://docs.openaq.org).
 
 [![Build Status](https://travis-ci.org/gmichokostas/openaq-client.svg?branch=master)](https://travis-ci.org/gmichokostas/openaq-client)
+![Run Tests](https://github.com/gmichokostas/openaq-client/workflows/Run%20Tests/badge.svg)
 
 ## Installation
 
